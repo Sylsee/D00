@@ -6,7 +6,7 @@
 #    By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/24 14:54:10 by spoliart          #+#    #+#              #
-#    Updated: 2022/01/24 19:17:30 by spoliart         ###   ########.fr        #
+#    Updated: 2022/01/25 00:02:36 by spoliart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME	=	phonebook
 CC		=	clang++
 CFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
-SRCS	=	PhoneBook.class.cpp main.cpp
+SRCS	=	tests.cpp
 OBJS	=	$(SRCS:.cpp=.o)
 
 all:	$(NAME)
