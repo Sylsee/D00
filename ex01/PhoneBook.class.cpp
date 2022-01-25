@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 18:25:38 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/24 23:51:23 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/25 13:40:52 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,15 @@
 
 int	PhoneBook::_nbContact = 0;
 
-PhoneBook::PhoneBook(void) { return; }
+PhoneBook::PhoneBook(void)
+{
+	return ;
+}
 
-PhoneBook::~PhoneBook(void) { return; }
+PhoneBook::~PhoneBook(void)
+{
+	return ;
+}
 
 int	PhoneBook::getNbContact(void)
 {
