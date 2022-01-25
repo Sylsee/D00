@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 18:25:38 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/25 13:40:52 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/25 17:04:40 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,6 +110,7 @@ void	PhoneBook::searchContact(PhoneBook *contact)
 	std::getline(std::cin, s_index);
 	std::stringstream intValue(s_index);
 	intValue >> index;
+	std::cout << "index: " << index << std::endl;
 
 	if (PhoneBook::_nbContact != 0 && index > 0 && index < PhoneBook::_nbContact + 1
 			&& contact[index - 1].isEmpty() == false) {
