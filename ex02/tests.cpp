@@ -7,11 +7,27 @@
 //                                                                            //
 // ************************************************************************** //
 
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <functional>
 #include "Account.hpp"
 
+/*
+int main(void)
+{
+	Account	acc(100);
+	Account	acc1(-10);
+
+	Account::displayAccountsInfos();
+	acc.displayStatus();
+	acc1.displayStatus();
+	acc.makeDeposit(100);
+	acc.displayStatus();
+	acc1.displayStatus();
+	return 0;
+}
+*/
 
 int		main( void ) {
 
