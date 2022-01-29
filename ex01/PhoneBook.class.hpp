@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 17:39:22 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/24 23:52:28 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:52:20 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,31 +18,23 @@
 # include <string>
 # include <cstdlib>
 # include <sstream>
+# include "Contact.hpp"
 
 class	PhoneBook {
 
 public:
 
-	PhoneBook(void);
-	~PhoneBook(void);
+	Contact	contact[8];
 
-	static void	addContact(PhoneBook &contact);
-	static void	searchContact(PhoneBook *contact);
+	PhoneBook( void );
+	~PhoneBook( void );
 
-	static int	getNbContact(void);
-	
-	bool	isEmpty(void);
+	void	addContact( void );
+	void	searchContact( void ) const;
 
 private:
 
 	static int	_nbContact;
-
-	int			_index;
-	std::string	_firstName;
-	std::string	_lastName;
-	std::string	_nickName;
-	std::string	_phoneNumber;
-	std::string	_darkestSecret;
 
 };
 

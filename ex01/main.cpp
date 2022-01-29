@@ -6,16 +6,17 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 17:53:59 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/24 23:18:38 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:51:59 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.class.hpp"
+#include "Contact.hpp"
 
 int	main(void)
 {
 	std::string	action;
-	PhoneBook	contact[8];
+	PhoneBook	phoneBook;
 
 	while (1)
 	{
@@ -23,12 +24,10 @@ int	main(void)
 		std::getline(std::cin, action);
 		if (action.compare("EXIT") == 0)
 			break;
-		else if (action.compare("ADD") == 0) {
-			PhoneBook::addContact(contact[PhoneBook::getNbContact()]);
-		}
-		else if (action.compare("SEARCH") == 0) {
-			PhoneBook::searchContact(contact);
-		}
+		else if (action.compare("ADD") == 0)
+			phoneBook.addContact();
+		else if (action.compare("SEARCH") == 0)
+			phoneBook.searchContact();
 	}
 	return (0);
 }
