@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <iostream>
+#include <cctype>
 
 int main(int argc, char **argv)
 {
@@ -20,9 +21,10 @@ int main(int argc, char **argv)
         for (int i = 1; i < argc; i++) {
             for (int j = 0; argv[i][j]; j++) {
                 if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
-                    argv[i][j] -= 32;
+                    std::cout << toupper(argv[i][j]);
+                else
+                    std::cout << argv[i][j];
             }
-            std::cout << argv[i];
         }
 		std::cout << std::endl;
     }
