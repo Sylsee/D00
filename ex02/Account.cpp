@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 00:10:12 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/25 16:03:19 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/03/04 13:22:57 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 #include <ctime>
 #include "Account.hpp"
 
-#ifndef DEBUG
 //# define DEBUG
-#endif
 
 int	Account::_nbAccounts = 0;
 int	Account::_totalAmount = 0;
